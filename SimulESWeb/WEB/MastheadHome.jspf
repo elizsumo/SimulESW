@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+    Document   : MastheadHome
+    Created on : Jul 28, 2010, 9:43:54 PM
+    Author     : CarlosAlvarezH
+-->
+<div style="height: 155px; width: 760px; -rave-layout: grid" xmlns:f="http://java.sun.com/jsf/core" xmlns:h="http://java.sun.com/jsf/html"
+    xmlns:ui="http://www.sun.com/web/ui" xmlns:webuijsf="http://www.sun.com/webui/webuijsf">
+    <f:subview id="MastheadHome">
+        <h:panelGrid id="mainPanel" style="height: 120px; left: 0px; top: 0px; position: absolute" width="1272">
+            <h:panelGrid binding="#{Masthead.titlePanel}" id="titlePanel"
+                style="background-image: url(./resources/masthead_background.gif); height: 120px; text-indent: 25px" width="1271">
+                <webuijsf:staticText id="appName"
+                    style="color: rgb(255, 255, 255); font-family: Georgia,'Times New Roman',times,serif; font-size: 24px; font-weight: bold" text="Movie Administrator"/>
+                <webuijsf:staticText id="poweredBy" style="color: #ffffff; font-family: Georgia,'Times New Roman',times,serif; font-size: 10px" text="Empowered by NetBeans 6"/>
+                <ui:staticText id="lblAplicationName"
+                    style="color: rgb(255, 255, 255); font-family: Georgia,'Times New Roman',times,serif; font-size: 24px; font-weight: bold" text="SimulES-W"/>
+                <ui:staticText id="poweredBy" style="color: #ffffff; font-family: Georgia,'Times New Roman',times,serif; font-size: 10px" text="Empowered by PUC-Rio"/>
+            </h:panelGrid>
+        </h:panelGrid>
+        <h:messages errorClass="errorMessage" fatalClass="fatalMessage" globalOnly="true" id="messageList1" infoClass="infoMessage" infoStyle="color: #13e864"
+            style="left: 912px; top: 168px; position: absolute; width: 216px" warnClass="warnMessage"/>
+    </f:subview>
+</div>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+* This is the head that appears up in all pages; also it contains the navigation menu between the different game pages and the messages control 
+-->
+<div style="height: 155px; width: 760px; -rave-layout: grid" xmlns:f="http://java.sun.com/jsf/core" xmlns:h="http://java.sun.com/jsf/html"
+    xmlns:ui="http://www.sun.com/web/ui" xmlns:webuijsf="http://www.sun.com/webui/webuijsf">
+    <f:subview id="Masthead">
+        <h:panelGrid id="mainPanel" style="height: 155px; left: 0px; top: 0px; position: absolute" width="1272">
+            <h:panelGrid binding="#{Masthead.titlePanel}" id="titlePanel"
+                style="background-image: url(./resources/masthead_background.gif); height: 120px; text-indent: 25px" width="1271">
+                <webuijsf:staticText id="appName"
+                    style="color: rgb(255, 255, 255); font-family: Georgia,'Times New Roman',times,serif; font-size: 24px; font-weight: bold" text="Movie Administrator"/>
+                <webuijsf:staticText id="poweredBy" style="color: #ffffff; font-family: Georgia,'Times New Roman',times,serif; font-size: 10px" text="Empowered by NetBeans 6"/>
+                <ui:staticText id="lblAplicationName"
+                    style="color: rgb(255, 255, 255); font-family: Georgia,'Times New Roman',times,serif; font-size: 24px; font-weight: bold" text="SimulES-W"/>
+                <ui:staticText id="poweredBy" style="color: #ffffff; font-family: Georgia,'Times New Roman',times,serif; font-size: 10px" text="Empowered by PUC-Rio"/>
+            </h:panelGrid>
+            <h:panelGrid columns="11" id="navPanel" style="background-color: rgb(221, 226, 238); height: 24px" width="1271">
+                <h:panelGrid id="fillerPanel" style="height: 24px" width="671"/>
+                <webuijsf:imageHyperlink id="home" text="Home" url="http://visualweb.netbeans.org/"/>
+                <webuijsf:imageHyperlink id="help" text="Help" url="readme.html"/>
+                <ui:imageHyperlink action="menu.main" id="main" imageURL="/resources/Brick%20house.png" text="Main"/>
+                <ui:imageHyperlink action="menu.admin" id="admin" imageURL="/resources/Task%20list.png" text="Admin"/>
+                <ui:imageHyperlink id="help" imageURL="/resources/Info.png" target="_blank" text="Help" url="readme.html"/>
+                <ui:imageHyperlink action="#{Masthead.logout_action}" id="logout" imageURL="/resources/Exit.png" text="Logout"/>
+            </h:panelGrid>
+        </h:panelGrid>
+        <h:messages errorClass="errorMessage" fatalClass="fatalMessage" globalOnly="true" id="messageList1" infoClass="infoMessage" infoStyle="color: #13e864"
+            style="left: 1032px; top: 192px; position: absolute; width: 216px" warnClass="warnMessage"/>
+    </f:subview>
+</div>

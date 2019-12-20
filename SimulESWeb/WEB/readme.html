@@ -1,0 +1,89 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <title>SimulES Read Me</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  </head>
+  <body style="width: 13in;">
+       <jsp:directive.include file="Cabecalho.jspf"/>
+      <h1>SimulES Application Read Me</h1>
+<p><b>About SimulES:</b> The main goal for a gamer in SimulES is to finish the project of software which is proposed when the game begins, this mean, the winner was the first player who implements and finishes his project without errors. This game allows player to learn about important computer science and software engineering concept. The resources into the game are: a game board, project cards, software engineer cards, game cards and one dice.</p>
+
+<p><b>Motivation:</b> The game technology has been used as a training tool in many educational areas but this technology isn’t common in the software engineering. SimulES is presented to minimize this problem; it is educational card game software which simulates the software development process. Therefore, this game allows students to take the role of a project manager and they manage related topics. </p>
+
+<p><b> Game dynamic:</b> When the game starts, one project must be chosen in the available projects set, this choice must be done randomly. Furthermore, the information about game and project would be visible to all players. After that, each player assembles in his individual board with his software engineer, problem cards, concept cards, and white/gray artifacts.  The player who got the highest dice result was who chooses the project and starts the game.
+In each round, each player throws the dice once. The dice result allows player to buy a card, if the dice upshot is less than three, he will buy only cards (concepts and problems) according with this result. In contrast, if the dice upshot is more than three he will buy cards (concepts and problems) and software engineer cards, the quantity the software engineer cards will be the different between three and the result (dice upshot – 3).  As an illustration, if Mary threw the dice and its result was 2, then Mary would buy 2 cards (problems and concepts). On the other hand, if Mary threw the dice and its result was 4 then Mary would buy 3 cards (problems and concepts) and 1 software engineer card. These cards will be to keep until that player believes necessary and makes his move into the game. Therefore, when the player put into the individual board some software engineer card this actions means that the player contracts this software engineer.
+Now, the player could receive problem cards of the others player. To be specific, the player named adversary throws cards problems to another player. The objective is to damage the other game and tries to win the game. These cards received will be used in the next round. After that, if the player has one card which invalidates some problem’s card, he will be able to use and the action describes in the problem card won’t affect his game, then he must discard both cards. On the other hand, if he doesn’t have any card which invalidates the problem’s card, this problem will be applied in his game.
+Furthermore, during the round the software engineer can execute one task set, his ability to execute these tasks is named “point of time”. These “point of time” allows he to execute different actions, such as:
+ </p>
+
+<p><b>Build artifact:  </b> the software engineer can build artifacts. If he builds with white cards then he will spend value of “point of time”. This value is indicated by complexity project. Or if he builds with gray cards then he will spend half value of “point of time”.</p>
+
+<p><b>Inspect artifact: </b>after building artifact task the software engineer could turn the cards (white or gray). It is possible some card would have defect. </p>
+
+<p><b>Correct defect: </b> if when the software engineer inspected some card he found some card with defect, he could correct this. But he spends “point of time”. In others words, He changes cards with defect by new cards with the same quality (white or gray). </p>
+
+<p><b>Artifact integrate in the module:   </b> this task can do when the player has enough cards (white or gray) in his individual board and these can compose some requirement’s module by the project. This action removes into the individual board. In the same way, theses cards and they would be in other place out the individual board or may be in some place for integrating artifacts.  </p>
+
+<p>Once, the player has built all necessary components to finish the project then he can declare that he finished the game. After that one validating is done by the other players.  That mean, some project modules would be randomly verified and they must be defects free. It is important that the number of modules has been verified depends on project quality.
+If the player doesn’t have any card with defect then he will winner the game.
+</p>
+
+<p><b>Resources
+</b> </p>
+
+<p><b>Individual board:</b> The individual board is an area where each player puts his software engineer in columns and his artifact in rows. The artifacts are the type of requirement, design, code, traceability and help. There is one cell next to the artifact and below the software engineer card where will be put the card (white and gray), as a result, this the software engineer build artifact with card (white and gray) in this place.</p>
+
+<p><b>Project cards: </b> These cards include the next information:  </p>
+
+<p><b>Description:</b>text in natural languages which describes the main characteristics about the project. This description helps players understand the main requirements in the game. Moreover, this description could have references to articles and books related with the project or its main concepts. </p>
+
+<p><b>Complexity:</b> this indicates how many “points of time” the software engineer spends to complete one artifact. If the software engineer build with white cards this action costs half complexity project, in the contrasts, if the software engineer build with gray cards then this cards will cost half value of the white cards. For example if the complexity of project is 4 each white card cost 2 “point of time” and gray card cost 1 “point of time”. Size: this point indicates how many modules must be complete to integrate and finish the project. Six is the largest number of modules that would be built. </p>
+
+<p><b>Quality:</b> this point indicates how many defects free the final product must be. This value changes between one and five. This activity is done when the player deliveries his product.</p>
+
+<p><b>Budget:</b> quantity of points available to spend into the project. This budget will be one constraint when the player employs his software engineers. Moreover, during the game the sum of salaries related with software engineer who are contracted by player doesn’t exceed the budgets project.</p>
+
+<p><b>Problem card:</b> These cards describe classic problems about software engineering. These problems are result of failures into the development process. Furthermore, these cards allows player to create obstacles to others player. </p>
+
+<p><b>The problem cards’ attributes are:  </b> </p>
+
+<p> References: they help to know about characteristics problem. </p>
+
+<p>Conditions:  they are related with the game’s player  </p>
+
+<p>Effect: it is the impact into the game’s player </p>
+
+<p><b>Concept card:</b> These cards describe the good practices into the software engineering and they can be used by players. Therefore these cards allows player move to the proposed objectives. </p>
+
+<p><b>Conditions:  they are related with the game’s player </b> </p>
+
+<p><b>The cards’ attributes are:</b> </p>
+
+<p>Code and name</p>
+
+<p>References: they help to know about characteristics and concept related.</p>
+
+<p>Conditions:  they are related with the player’s game </p>
+
+<p>Effect: it is the impact into the player’s game</p>
+
+
+<p><b>Cards (White and Gray):</b> These cards represent the building product by the software engineer into the individual board. They could have bugs or could not. Furthermore they are white or gray, these colors represent their quality. To be specific, when a player uses a white card to build artifact then he spends twice “point of time”. On the contrary, if he uses a gray card to build artifact then he will spend a “point of time” to produces some artifact. Although he spends more “point of time” when he uses white cards, these cards don’t have much error probability than gray cards. </p>
+
+
+<p>To win the game the player must build all modules through of the artifacts. These artifacts are defined when the game begins.</p>
+
+
+<p>For more information, see ....</p>
+
+<p> <a href="http://www.teccomm.les.inf.puc-rio.br/emagno/simules/">www.simules.com</a> </p>
+
+<p><b>Note</b>: You must build the project before opening any of the pages otherwise the designtime experience 
+will not be enjoyable, because an error message will be displayed in the Designer.</p>
+
+      <p><a href="javascript:window.close();">Close</a> the Help window.</p>
+        
+    </body>
+</html>

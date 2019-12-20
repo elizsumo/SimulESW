@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+    <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+    <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/simules</property>
+    <property name="hibernate.connection.username">root</property>
+    <property name="hibernate.connection.password">admin</property>
+    <property name="hibernate.show_sql">true</property>
+    <property name="hibernate.current_session_context_class">thread</property>
+    <mapping resource="SimulES/Model/Project.hbm.xml"/>
+    <mapping resource="SimulES/Model/Playersoftengineer.hbm.xml"/>
+    <mapping resource="SimulES/Model/Cardtype.hbm.xml"/>
+    <mapping resource="SimulES/Model/Softwareengineerstatus.hbm.xml"/>
+    <mapping resource="SimulES/Model/Playercard.hbm.xml"/>
+    <mapping resource="SimulES/Model/Player.hbm.xml"/>
+    <mapping resource="SimulES/Model/Sourceofcards.hbm.xml"/>
+    <mapping resource="SimulES/Model/Round.hbm.xml"/>
+    <mapping resource="SimulES/Model/Card.hbm.xml"/>
+    <mapping resource="SimulES/Model/Playersproblems.hbm.xml"/>
+    <mapping resource="SimulES/Model/Individualboard.hbm.xml"/>
+    <mapping resource="SimulES/Model/Modulesproject.hbm.xml"/>
+    <mapping resource="SimulES/Model/Softengineer.hbm.xml"/>
+    <mapping resource="SimulES/Model/Move.hbm.xml"/>
+    <mapping resource="SimulES/Model/Acceptmove.hbm.xml"/>
+    <mapping resource="SimulES/Model/Environmentvariables.hbm.xml"/>
+    <mapping resource="SimulES/Model/Admin.hbm.xml"/>
+  </session-factory>
+</hibernate-configuration>

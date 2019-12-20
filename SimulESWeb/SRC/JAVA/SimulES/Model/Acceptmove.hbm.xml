@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Representação em XML para hibernate do objeto -->
+<hibernate-mapping>
+  <class catalog="simules" name="SimulES.Model.Acceptmove" table="acceptmove">
+    <composite-id class="SimulES.Model.AcceptmoveId" name="id">
+      <key-property name="playerId" type="short">
+        <column name="player_id"/>
+      </key-property>
+      <key-property name="moveId" type="short">
+        <column name="move_id"/>
+      </key-property>
+      <key-property name="cardId" type="short">
+        <column name="card_id"/>
+      </key-property>
+    </composite-id>
+    <many-to-one class="SimulES.Model.Card" fetch="select" insert="false" name="card" update="false">
+      <column name="card_id" not-null="true"/>
+    </many-to-one>
+    <many-to-one class="SimulES.Model.Player" fetch="select" insert="false" name="player" update="false">
+      <column name="player_id" not-null="true"/>
+    </many-to-one>
+    <many-to-one class="SimulES.Model.Move" fetch="select" insert="false" name="move" update="false">
+      <column name="move_id" not-null="true"/>
+    </many-to-one>
+    <property name="description" type="string">
+      <column length="45" name="description" not-null="true"/>
+    </property>
+  </class>
+</hibernate-mapping>

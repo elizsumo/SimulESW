@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+    Document   : MastheadMain
+    Created on : Oct 16, 2011, 4:30:53 PM
+    Author     : elizsumoComputer
+-->
+<div style="-rave-layout: grid; width: 400px; height: 200px" xmlns:f="http://java.sun.com/jsf/core" xmlns:h="http://java.sun.com/jsf/html" xmlns:ui="http://www.sun.com/web/ui">
+    <f:subview id="MastheadMain">
+        <h:panelGrid id="titlePanel1" style="background-image: url(./resources/masthead_background.gif); height: 120px; text-indent: 25px" width="1271">
+            <ui:staticText id="lblAplicationName1"
+                style="color: rgb(255, 255, 255); font-family: Georgia,'Times New Roman',times,serif; font-size: 24px; font-weight: bold" text="SimulES-W"/>
+            <ui:staticText id="poweredBy1" style="color: #ffffff; font-family: Georgia,'Times New Roman',times,serif; font-size: 10px" text="Empowered by PUC-Rio"/>
+        </h:panelGrid>
+        <h:panelGrid columns="11" id="navPanel1" style="background-color: rgb(221, 226, 238); height: 24px" width="1271">
+            <h:panelGrid id="fillerPanel1" style="height: 24px" width="671"/>
+            <ui:imageHyperlink action="menu.main" id="main1" imageURL="/resources/Brick%20house.png" text="Main"/>
+            <ui:imageHyperlink action="menu.admin" id="admin1" imageURL="/resources/Task%20list.png" text="Admin"/>
+            <ui:imageHyperlink id="help1" imageURL="/resources/Info.png" target="_blank" text="Help" url="readme.html"/>
+            <ui:imageHyperlink action="#{MastheadMain.logout_action}" id="logout1" imageURL="/resources/Exit.png" text="Logout"/>
+        </h:panelGrid>
+        <h:messages errorClass="errorMessage" fatalClass="fatalMessage" globalOnly="true" id="messageList1" infoClass="infoMessage" infoStyle="color: #13e864"
+            style="left: 1008px; top: 168px; position: absolute; width: 216px" warnClass="warnMessage"/>
+        <ui:button action="#{MastheadMain.btnPlayer1_action}" id="btnPlayer1" imageURL="/resources/dilbertPlayer.jpg"
+            style="height: 46px; left: 504px; top: 264px; position: absolute; width: 70px" text="Button"/>
+        <ui:button binding="#{MastheadMain.btnPlayer2}" disabled="true" id="btnPlayer2" imageURL="/resources/dilbertPlayer.jpg"
+            style="height: 46px; left: 600px; top: 264px; position: absolute; width: 72px" text="Button"/>
+        <ui:button id="btnPlayer3" imageURL="/resources/dilbertPlayer.jpg" style="height: 50px; left: 720px; top: 264px; position: absolute; width: 79px" text="Button"/>
+        <ui:button id="btnPlayer4" imageURL="/resources/dilbertPlayer.jpg" style="height: 46px; left: 840px; top: 264px; position: absolute; width: 72px" text="Button"/>
+        <ui:button id="btnPlayer5" imageURL="/resources/dilbertPlayer.jpg" style="height: 50px; left: 960px; top: 264px; position: absolute; width: 79px" text="Button"/>
+        <ui:imageHyperlink action="#{MastheadMain.imageHyperlink1_action}" binding="#{MastheadMain.imageHyperlink1}" height="40" id="imageHyperlink1"
+            imageURL="/resources/dilbertPlayer.jpg" style="left: 600px; top: 360px; position: absolute" text="Player 1" width="104"/>
+        <ui:imageHyperlink binding="#{MastheadMain.imageHyperlink2}" height="28" id="imageHyperlink2" imageURL="/resources/dilbertPlayer.jpg"
+            style="left: 792px; top: 360px; position: absolute" text="Image Hyperlink" visible="false" width="72"/>
+    </f:subview>
+</div>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Representação em XML para hibernate do objeto -->
+<hibernate-mapping>
+  <class catalog="simules" name="SimulES.Model.Playersproblems" table="playersproblems">
+    <composite-id class="SimulES.Model.PlayersproblemsId" name="id">
+      <key-property name="playerId" type="short">
+        <column name="player_id"/>
+      </key-property>
+      <key-property name="cardId" type="short">
+        <column name="card_id"/>
+      </key-property>
+    </composite-id>
+    <many-to-one class="SimulES.Model.Card" fetch="select" insert="false" name="cardByCardId" update="false">
+      <column name="card_id" not-null="true"/>
+    </many-to-one>
+    <many-to-one class="SimulES.Model.Player" fetch="select" insert="false" name="player" update="false">
+      <column name="player_id" not-null="true"/>
+    </many-to-one>
+    <many-to-one class="SimulES.Model.Card" fetch="select" name="cardByCardTreatment">
+      <column name="card_treatment"/>
+    </many-to-one>
+    <property name="state" type="int">
+      <column name="state" not-null="true"/>
+    </property>
+    <property name="observation" type="string">
+      <column length="200" name="observation"/>
+    </property>
+  </class>
+</hibernate-mapping>

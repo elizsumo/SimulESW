@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scene Scope="Project" version="2">
+    <Scope Scope="Faces Configuration Only"/>
+    <Scope Scope="Project">
+        <Node id="PlayGamePage.jsp" x="1697" y="711" zoom="false"/>
+        <Node id="StartGamePage.jsp" x="1698" y="228" zoom="false"/>
+        <Node id="LaSegunda.jsp" x="650" y="301" zoom="true"/>
+        <Node id="AllIndividualBoardsPage.jsp" x="400" y="450" zoom="true"/>
+        <Node id="MessageSaveDrag.jsp" x="1400" y="150" zoom="true"/>
+        <Node id="MessageSubmitInspect.jsp" x="650" y="450" zoom="true"/>
+        <Node id="SubmitProblemsPage.jsp" x="116" y="862" zoom="true"/>
+        <Node id="PlayConceptsRoundPage.jsp" x="1386" y="670" zoom="true"/>
+        <Node id="SourceCardsPage.jsp" x="994" y="500" zoom="true"/>
+        <Node id="PlayActionsRoundPage.jsp" x="601" y="765" zoom="false"/>
+        <Node id="CardPage.jsp" x="1123" y="286" zoom="true"/>
+        <Node id="moreAction.jsp" x="206" y="217" zoom="true"/>
+        <Node id="AdminPage.jsp" x="1645" y="330" zoom="false"/>
+        <Node id="LoginAdmin.jsp" x="345" y="19" zoom="true"/>
+        <Node id="PlayConceptsProblemsRoundPage.jsp" x="1026" y="774" zoom="false"/>
+        <Node id="readme.html" x="31" y="203" zoom="true"/>
+        <Node id="Index.jsp" x="29" y="400" zoom="false"/>
+        <Node id="DiscardCardPage.jsp" x="422" y="662" zoom="true"/>
+        <Node id="RestartGame.jsp" x="650" y="150" zoom="true"/>
+        <Node id="ConceptsCardsByPlayer.jsp" x="326" y="121" zoom="true"/>
+        <Node id="*" x="0" y="-12" zoom="false"/>
+        <Node id="PlayerTable.jsp" x="1150" y="150" zoom="true"/>
+        <Node id="resources/vxcRV_EJ.htm.part.htm" x="896" y="230" zoom="true"/>
+        <Node id="IndividualBoardOnlyReadPage.jsp" x="150" y="450" zoom="true"/>
+        <Node id="ManageSoftwareEngineersPage.jsp" x="312" y="846" zoom="true"/>
+        <Node id="ChooseSupporMaterialPage.jsp" x="1397" y="274" zoom="true"/>
+        <Node id="ProblemsByPlayerPage.jsp" x="669" y="529" zoom="true"/>
+        <Node id="UnderConstructionPage.jsp" x="603" y="401" zoom="true"/>
+        <Node id="TestingPage.jsp" x="487" y="374" zoom="false"/>
+        <Node id="SupportMaterialPage.jsp" x="1397" y="208" zoom="true"/>
+        <Node id="AdminProblemsPage.jsp" x="1261" y="332" zoom="true"/>
+        <Node id="AllProblemsTreatedPage.jsp" x="1650" y="150" zoom="true"/>
+        <Node id="resources/yahoo/tooltip/component.htm" x="400" y="600" zoom="true"/>
+        <Node id="SoftwareEngineerDescPage.jsp" x="511" y="247" zoom="false"/>
+        <Node id="IndividualBoardPage.jsp" x="900" y="150" zoom="true"/>
+        <Node id="PlayStartRoundPage.jsp" x="832" y="654" zoom="true"/>
+        <Node id="ManageCardsPage.jsp" x="1196" y="374" zoom="true"/>
+        <Node id="Home.jsp" x="704" y="741" zoom="false"/>
+    </Scope>
+    <Scope Scope="All Faces Configurations"/>
+</Scene>

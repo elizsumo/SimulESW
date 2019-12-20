@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Representação em XML para hibernate do objeto -->
+<hibernate-mapping>
+  <class catalog="simules" name="SimulES.Model.Card" table="card">
+    <id name="cardId" type="java.lang.Short">
+      <column name="card_id"/>
+      <generator class="identity"/>
+    </id>
+    <many-to-one class="SimulES.Model.Sourceofcards" fetch="select" name="sourceofcards">
+      <column name="sourceofcards_id" not-null="true"/>
+    </many-to-one>
+    <many-to-one class="SimulES.Model.Cardtype" fetch="select" name="cardtype">
+      <column name="cardtype_id" not-null="true"/>
+    </many-to-one>
+    <property name="name" type="string">
+      <column length="45" name="name" not-null="true"/>
+    </property>
+    <property name="category" type="string">
+      <column length="45" name="category"/>
+    </property>
+    <property name="reference" type="string">
+      <column length="45" name="reference" not-null="true"/>
+    </property>
+    <property name="description" type="string">
+      <column name="description" not-null="true"/>
+    </property>
+    <property name="rule" type="string">
+      <column length="45" name="rule"/>
+    </property>
+    <property name="referencelink" type="string">
+      <column length="100" name="referencelink" not-null="true"/>
+    </property>
+    <set inverse="true" name="acceptmoves">
+      <key>
+        <column name="card_id" not-null="true"/>
+      </key>
+      <one-to-many class="SimulES.Model.Acceptmove"/>
+    </set>
+  </class>
+</hibernate-mapping>

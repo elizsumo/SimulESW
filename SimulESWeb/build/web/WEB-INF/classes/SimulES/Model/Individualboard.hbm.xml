@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Representação em XML para hibernate do objeto -->
+<hibernate-mapping>
+  <class catalog="simules" name="SimulES.Model.Individualboard" table="individualboard">
+    <id name="player" type="short">
+      <column name="player"/>
+      <generator class="assigned"/>
+    </id>
+    <property name="configuration" type="string">
+      <column length="500" name="configuration" not-null="true"/>
+    </property>
+    <property name="update_board" type="short">
+      <column name="update_board" not-null="true"/>
+    </property>
+  </class>
+</hibernate-mapping>

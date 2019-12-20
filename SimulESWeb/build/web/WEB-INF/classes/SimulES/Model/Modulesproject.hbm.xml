@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Representação em XML para hibernate do objeto -->
+<hibernate-mapping>
+  <class catalog="simules" name="SimulES.Model.Modulesproject" table="modulesproject">
+    <composite-id class="SimulES.Model.ModulesprojectId" name="id">
+      <key-property name="projectId" type="short">
+        <column name="project_id"/>
+      </key-property>
+      <key-property name="module" type="short">
+        <column name="module"/>
+      </key-property>
+    </composite-id>
+    <many-to-one class="SimulES.Model.Project" fetch="select" insert="false" name="project" update="false">
+      <column name="project_id" not-null="true"/>
+    </many-to-one>
+    <property name="requirement" type="java.lang.Integer">
+      <column name="requirement"/>
+    </property>
+    <property name="design" type="java.lang.Integer">
+      <column name="design"/>
+    </property>
+    <property name="code" type="java.lang.Integer">
+      <column name="code"/>
+    </property>
+    <property name="traceability" type="java.lang.Integer">
+      <column name="traceability"/>
+    </property>
+    <property name="help" type="java.lang.Integer">
+      <column name="help"/>
+    </property>
+  </class>
+</hibernate-mapping>

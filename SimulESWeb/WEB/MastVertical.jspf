@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Document   : MastVertical
+    Created on : Jul 30, 2010, 3:58:58 PM
+    Author     : CarlosAlvarezH
+-->
+<div style="background-color: rgb(204, 204, 255); height: 1500px; width: 250px; -rave-layout: grid" xmlns:f="http://java.sun.com/jsf/core"
+    xmlns:h="http://java.sun.com/jsf/html" xmlns:ui="http://www.sun.com/web/ui" xmlns:webuijsf="http://www.sun.com/webui/webuijsf">
+    <f:subview id="MastVertical">
+        <h:panelGrid id="gridPanel1" rowClasses="10" style="height: 528px; left: 24px; top: -72px; position: absolute" width="216">
+            <h:panelGrid id="gridPanel2" style="height: 240px; width: 100%"/>
+            <ui:staticText id="staticText1" style="color: navy; font-family: Arial,Helvetica,sans-serif; font-size: 14px; font-style: italic; font-weight: bold" text="Choose the action to execute:"/>
+            <ui:imageHyperlink action="menu.concept" id="concept" imageURL="/resources/New%20Mail.png" text="Return to Concepts"/>
+            <ui:imageHyperlink action="menu.SoftwareEngineers" id="SoftwareEngineers" imageURL="/resources/User.png" text="Software Engineers"/>
+            <ui:imageHyperlink action="menu.DiscardCard" id="DiscardCard" imageURL="/resources/Remove%20Document.png" text="My Own Cards"/>
+            <ui:imageHyperlink action="menu.SubmitProblems" id="SubmitProblems" imageURL="/resources/Smiley%20Star%20Pink.png" text="Submit Problems"/>
+            <ui:imageHyperlink action="menu.ProblemsByPlayer" id="ProblemsByPlayer" imageURL="/resources/Smiley%20Star%20Sad.png" text="Problems By Player"/>
+            <ui:imageHyperlink action="menu.AllProblemsTreated" id="AllProblemsTreated" imageURL="/resources/Users.png" text="All Problems Treated"/>
+        </h:panelGrid>
+    </f:subview>
+</div>

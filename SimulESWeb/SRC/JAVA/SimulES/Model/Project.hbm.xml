@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Representação em XML para hibernate do objeto -->
+<hibernate-mapping>
+  <class catalog="simules" name="SimulES.Model.Project" table="project">
+    <id name="projectId" type="java.lang.Short">
+      <column name="project_id"/>
+      <generator class="identity"/>
+    </id>
+    <property name="name" type="string">
+      <column length="45" name="name" not-null="true"/>
+    </property>
+    <property name="description" type="string">
+      <column length="45" name="description" not-null="true"/>
+    </property>
+    <property name="complexity" type="int">
+      <column name="complexity" not-null="true"/>
+    </property>
+    <property name="budget" type="int">
+      <column name="budget" not-null="true"/>
+    </property>
+    <property name="status" type="int">
+      <column name="status" not-null="true"/>
+    </property>
+    <property name="size" type="int">
+      <column name="size" not-null="true"/>
+    </property>
+    <property name="quality" type="int">
+      <column name="quality" not-null="true"/>
+    </property>
+    <set inverse="true" name="modulesprojects">
+      <key>
+        <column name="project_id" not-null="true"/>
+      </key>
+      <one-to-many class="SimulES.Model.Modulesproject"/>
+    </set>
+  </class>
+</hibernate-mapping>

@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 21-May-2012 21:36:47 by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="SimulES.Model.Player" table="player" catalog="simules">
+        <id name="playerId" type="java.lang.Short">
+            <column name="player_id" />
+            <generator class="identity" />
+        </id>
+        <property name="nickname" type="string">
+            <column name="nickname" length="45" not-null="true" />
+        </property>
+        <property name="dice" type="java.lang.Integer">
+            <column name="dice" />
+        </property>
+        <property name="ordertoplay" type="java.lang.Integer">
+            <column name="ordertoplay" />
+        </property>
+    </class>
+</hibernate-mapping>

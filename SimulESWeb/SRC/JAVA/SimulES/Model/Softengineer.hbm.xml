@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Representação em XML para hibernate do objeto -->
+<hibernate-mapping>
+  <class catalog="simules" name="SimulES.Model.Softengineer" table="softengineer">
+    <id name="softengineerId" type="java.lang.Short">
+      <column name="softengineer_id"/>
+      <generator class="identity"/>
+    </id>
+    <many-to-one class="SimulES.Model.Softwareengineerstatus" fetch="select" name="softwareengineerstatus">
+      <column name="status_id" not-null="true"/>
+    </many-to-one>
+    <property name="name" type="string">
+      <column length="45" name="name" not-null="true"/>
+    </property>
+    <property name="description" type="string">
+      <column length="200" name="description" not-null="true"/>
+    </property>
+    <property name="salary" type="int">
+      <column name="salary" not-null="true"/>
+    </property>
+    <property name="hability" type="int">
+      <column name="hability" not-null="true"/>
+    </property>
+    <property name="maturity" type="int">
+      <column name="maturity" not-null="true"/>
+    </property>
+  </class>
+</hibernate-mapping>
